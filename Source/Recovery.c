@@ -1,21 +1,21 @@
-#include "../Userland/API/File.h"
-#include "../Userland/API/Graphics.h"
-#include "../Userland/API/Input.h"
-#include "../Userland/API/Process.h"
-#include "../Userland/API/Serial.h"
-#include "../Userland/API/SystemInfo.h"
+#include "../../API/Source/File.h"
+#include "../../API/Source/Graphics.h"
+#include "../../API/Source/Input.h"
+#include "../../API/Source/Process.h"
+#include "../../API/Source/Serial.h"
+#include "../../API/Source/SystemInfo.h"
 #ifdef RECOVERY_AUDIO_TEST
-#include "../Userland/API/Audio.h"
+#include "../../API/Source/Audio.h"
 #endif
-#include "../libc/I_libc/include/string.h"
-#include "../libc/I_libc/include/stdlib.h"
-#include "../libc/I_libc/include/math.h"
+#include "../../I_libc/Source/include/string.h"
+#include "../../I_libc/Source/include/stdlib.h"
+#include "../../I_libc/Source/include/math.h"
 
 #define STB_TRUETYPE_IMPLEMENTATION
 #define STBTT_malloc(x,u)  ((void)(u),malloc(x))
 #define STBTT_free(x,u)    ((void)(u),free(x))
 #define STBTT_fmod(x,y)    fmod(x,y)
-#include "../Vendor/Header/stb_truetype.h"
+#include "../../Vendor/Header/stb_truetype.h"
 
 #define RECOVERY_PAYLOAD_PATH       "/Recovery/ImplusOS-root.tar.gz"
 #define RECOVERY_INSTALL_IMAGE_PATH "/Recovery/ImplusOS-install.img"
