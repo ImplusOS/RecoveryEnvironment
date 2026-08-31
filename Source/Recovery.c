@@ -1,15 +1,15 @@
-#include "../../API/Source/File.h"
-#include "../../API/Source/Graphics.h"
-#include "../../API/Source/Input.h"
-#include "../../API/Source/Process.h"
-#include "../../API/Source/Serial.h"
-#include "../../API/Source/SystemInfo.h"
+#include "../../Userland/API/Source/File.h"
+#include "../../Userland/API/Source/Graphics.h"
+#include "../../Userland/API/Source/Input.h"
+#include "../../Userland/API/Source/Process.h"
+#include "../../Userland/API/Source/Serial.h"
+#include "../../Userland/API/Source/SystemInfo.h"
 #ifdef RECOVERY_AUDIO_TEST
-#include "../../API/Source/Audio.h"
+#include "../../Userland/API/Source/Audio.h"
 #endif
-#include "../../I_libc/libc/include/string.h"
-#include "../../I_libc/libc/include/stdlib.h"
-#include "../../I_libc/libc/include/math.h"
+#include "../../libc/I_libc/Source/include/string.h"
+#include "../../libc/I_libc/Source/include/stdlib.h"
+#include "../../libc/I_libc/Source/include/math.h"
 
 #define STB_TRUETYPE_IMPLEMENTATION
 #define STBTT_malloc(x,u)  ((void)(u),malloc(x))
