@@ -7,9 +7,9 @@
 #ifdef RECOVERY_AUDIO_TEST
 #include "../../API/Source/Audio.h"
 #endif
-#include "../../I_libc/Source/include/string.h"
-#include "../../I_libc/Source/include/stdlib.h"
-#include "../../I_libc/Source/include/math.h"
+#include "../../I_libc/libc/include/string.h"
+#include "../../I_libc/libc/include/stdlib.h"
+#include "../../I_libc/libc/include/math.h"
 
 #define STB_TRUETYPE_IMPLEMENTATION
 #define STBTT_malloc(x,u)  ((void)(u),malloc(x))
